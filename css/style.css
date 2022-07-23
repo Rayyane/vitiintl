@@ -8903,9 +8903,11 @@ h3.vr {
 }
 
 #service-clock .card .card-body {
-  border: solid 1px #fff;
+  /*border: solid 1px #fff;*/
+  border: none;
   /*box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.1), 0 -1px 8px 2px rgba(0, 0, 0, 0.1);*/
   box-shadow: 2px 2px 8px rgba(81, 81, 81, 0.5);
+  transition: all .5s ease;
 }
 
 #service-clock .card .card-body h2 {
@@ -8919,6 +8921,18 @@ h3.vr {
   line-height: 1rem;
   /*letter-spacing: 1px;*/
   font-weight: normal;
+}
+
+#service-clock .card .card-body:hover {
+  background-color: #e45826;
+}
+
+#service-clock .card .card-body:hover .card-title{
+  color: white;
+}
+
+#service-clock .card .card-body:hover .card-text{
+  color: white;
 }
 
 #time .circle {
@@ -9702,6 +9716,8 @@ textarea.form-control {
   color: #737373;
   font-size: 14px;
   line-height: 1rem;
+  cursor: pointer;
+  transition: all .2s ease;
 }
 
 .ftco-footer .ftco-footer-widget .contacts h3 {
@@ -9709,9 +9725,8 @@ textarea.form-control {
   margin-bottom: 1em;
 }
 
-.ftco-footer .ftco-footer-widget img svg:hover {
-    fill: #e45826;
-    stroke: #e45826;
+.ftco-footer .ftco-footer-widget .contacts p:hover {
+    transform: scale(1.05);
   }
 
   /*.ftco-footer .ftco-footer-widget p {
@@ -10086,8 +10101,30 @@ textarea.form-control {
 
 #sustainability-section .sustain-img {
   margin-top: 1.3rem;
-  
+  overflow: hidden;
 }
+
+#sustainability-section .sustain-img .zoom_n {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#sustainability-section .sustain-img .zoom_n:hover {
+  transform: scale(1.1);
+}
+
+/*#sustainability-section .sustain-img .img-rap {
+  overflow: hidden;
+}
+
+#sustainability-section .sustain-img .img-rap .zoom {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+#sustainability-section .sustain-img .img-rap .zoom:hover {
+  transform: scale(1.1);
+}*/
 
 #sustainability-section .sustain-img img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
@@ -10252,6 +10289,8 @@ textarea.form-control {
   font-weight: lighter;
 }
 
+
+
 .contact-section .service-img {
   background-position: center;
   background-size: cover;
@@ -10259,6 +10298,19 @@ textarea.form-control {
   width: 200px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
   /*border-radius: 1%;*/
+}
+
+.contact-section .image-container {
+  overflow: hidden;
+}
+
+.contact-section .image-container .zoom {
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+.contact-section .image-container .zoom:hover {
+  transform: scale(1.1);
 }
 
 .custom-title {
@@ -10388,6 +10440,8 @@ textarea.form-control {
 .client-section .client-img img {
   width: 130px;
   margin:5px 20px;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
 .client-section .client-img img:hover {
@@ -10409,6 +10463,8 @@ textarea.form-control {
 .certification-section .certification-img img {
   width: 130px;
   margin:0px 20px;
+  cursor: pointer;
+  transition: all .5s ease;
 }
 
 .certification-section .certification-img img:hover {
